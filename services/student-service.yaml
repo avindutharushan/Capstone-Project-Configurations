@@ -2,13 +2,11 @@ spring:
   mvc:
     problemdetails:
       enabled: true
-
   datasource:
-    url: jdbc:postgresql://localhost:5432/db-capstone
+    url: jdbc:postgresql://localhost:5432/student_db?sslmode=disable
     username: postgres
-    password: psql
+    password: "VHcT;0l%SJOLi}Ro"
     driver-class-name: org.postgresql.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
@@ -16,22 +14,17 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-#        format_sql: true
-
 servlet:
   multipart:
     enabled: true
     max-file-size: 5MB
     max-request-size: 10MB
-
 server:
   port: 0
   forward-headers-strategy: framework
-
 eureka:
   instance:
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
-
 app:
   storage:
     path: ${user.home}/.ijse/eca/students
