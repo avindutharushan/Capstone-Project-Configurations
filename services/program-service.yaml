@@ -1,7 +1,7 @@
 spring:
   data:
-    mongodb:
-      uri: "mongodb://root:qIorB0QTMZbwvqR1b9WcOx8zpbsgJJuumfy-95BaIN4pWxlY@2c531005-1175-4e9d-a8cf-e98b8c50254b.asia-southeast1.firestore.goog:443/db-capstone-v2?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false"
+    firestore:
+      project-id: project-bfaec9d7-61a0-45c1-823
 server:
   port: 0
 eureka:
