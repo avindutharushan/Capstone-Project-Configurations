@@ -31,3 +31,15 @@ spring:
                 allowed-headers: "*"
 server:
   port: 7000
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "https://capstone-webapp-779717757562.asia-south1.run.app"
+              - "http://localhost:3000"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            allowCredentials: true
